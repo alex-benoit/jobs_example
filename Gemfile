@@ -11,7 +11,7 @@ gem 'redis'
 
 gem 'sidekiq'
 gem 'sidekiq-failures'
-gem 'sinatra', '>= 2.0.0.beta2', require: false
+gem 'sinatra', require: false
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
