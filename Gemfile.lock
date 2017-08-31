@@ -107,7 +107,7 @@ GEM
     mini_portile2 (2.2.0)
     minitest (5.10.3)
     multi_json (1.12.1)
-    mustermann (1.0.0)
+    mustermann (1.0.1)
     nio4r (2.1.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
@@ -242,7 +242,7 @@ DEPENDENCIES
   sidekiq
   sidekiq-failures
   simple_form
-  sinatra
+  sinatra (>= 2.0.0.beta2)
   spring
   spring-watcher-listen (~> 2.0.0)
   uglifier
