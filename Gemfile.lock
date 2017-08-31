@@ -217,7 +217,7 @@ DEPENDENCIES
   redis
   sass-rails
   sidekiq
-  sidekiq-failures
+  sidekiq-failures (~> 1.0)
   simple_form
   sinatra
   spring

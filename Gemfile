@@ -10,7 +10,7 @@ gem 'rails', '5.0.5'
 gem 'redis'
 
 gem 'sidekiq'
-gem 'sidekiq-failures'
+gem 'sidekiq-failures', '~> 1.0'
 gem 'sinatra', require: false
 
 gem 'autoprefixer-rails'
