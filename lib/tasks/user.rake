@@ -1,0 +1,19 @@
+namespace :user do
+  desc "Enriching all users with Clearbit (async)"
+  task update_all: :environment do
+    users = User.all
+    puts "Enqueuing update of #{users.size} users..."
+    users.each do |user|
+      UpdateUserJob.perform_later(user.id)
+    end
+  end
+
+  desc "Enriching a given user with Clearbit (sync)"
+  task :update, [:user_id] => :environment do |t, args|
+    user = User.find(args[:user_id])
+    puts "Enriching #{user.email}..."
+    UpdateUserJob.perform_now(user.id)
+    puts "done!!"
+  end
+end
+
